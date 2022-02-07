@@ -1,0 +1,21 @@
+@media(max-width: 1300px){
+    body{
+        overflow-x: auto;
+    }
+}
+/*
+@media(max-width: 1100px){
+    .foods-wrapper{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media(max-width: 950px){
+    .foods-wrapper{
+        grid-template-columns: auto auto;
+    }
+}
+@media(max-width: 950px){
+    .foods-wrapper{
+        grid-template-columns: auto;
+    }
+}*/
