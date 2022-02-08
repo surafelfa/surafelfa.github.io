@@ -1,6 +1,6 @@
 
 
-//############anavigation menu##################
+//############ navigation menu ##################
 (()=>{
     const hamburgerBtn = document.querySelector(".hamburger-btn"),
     navMenu = document.querySelector(".nav-menu"),
@@ -59,7 +59,6 @@
                     fadeOutEffect();
                 }
                 //add hash [#] to the url
-
                 window.location.hash = hash;
             }
         }
@@ -67,11 +66,7 @@
 })();
 
 
-//############about section tabs##################
-
-
-
-//############about section tabs##################
+//############ about section tabs ##################
 (()=>{
     const aboutSection = document.querySelector('.about-section'),
     tabsContainer = document.querySelector('.about-tabs');
@@ -92,6 +87,8 @@
 function bodyScrollingToggle(){
     document.body.classList.toggle("hidden-scrolling");
 }
+
+
 //############ portfolio filter and popup ##################
 (()=>{
     const filterContainer = document.querySelector(".portfolio-filter"),
@@ -230,7 +227,9 @@ function bodyScrollingToggle(){
     }
 })();
 
-//############ portfolio filter and popup ##################
+
+
+//############ testimonial ##################
 (() =>{
     const sliderContainer = document.querySelector(".testi-slider-container"),
     slides = sliderContainer.querySelectorAll(".testi-item"),
