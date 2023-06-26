@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="b-loader">
+            <div class="s-loader"></div>
+        </div>
+    </div>
+
+    
+    <div class="main-wrapper">
+        <!--modal start-->
+        <section class="modal">
+            <form action="#" method="POST" class="modal-form">
+                <span><h2>NEWSLETTER</h2><i class="fa fa-times"></i></span>
+                <P>Join our mailing list to receive updates on new arrivals and special offers.</P>
+                <label for="email">
+                    <input type="email" name="email" required placeholder="Enter e-mail" focused>
+                </label><br>
+                <input type="submit" value="Subscribe">
+            </form>
+        </section>
+        <!--modal end-->
+        <div class="nav-bar">
+            <h2>LOGO</h2>
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="main-div">
+            <!--nav start-->
+            <div class="nav-wrapper">
+                <nav>
+                    <h2>LOGO</h2>
+                    <ul>
+                        <li>Shirts</li>
+                        <li>Dresses</li>
+                        <li class='jeans'>Jeans <i class="fa fa-caret-down" aria-hidden="true" id="icon"></i></li>
+                        <ul id="list-of-jeans" style="padding-left: 15px;">
+                            <li ><i class="fa fa-caret-right" aria-hidden="true"></i> Skinny</li>
+                            <li>Relaxed</li>
+                            <li>Bootcut</li>
+                            <li>Straight</li>
+                        </ul>
+                        <li>Jackets</li>
+                        <li>Gymwear</li>
+                        <li>Blazers</li>
+                        <li>Shoes</li> 
+                    </ul>
+                    <ul style="padding-top: 50px">
+                        <li>Contact</li>
+                        <li class="newsletter">Newsletter</li>
+                        <li>Subscribe</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--nav end-->
+            <div class="right-side">
+                <header>
+                    <div class="header-left-side">
+                        <h2>Jeans</h2>
+                    </div>
+                    <div class="header-left-side">
+                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </div> 
+                </header>
+                <main>
+                    <div class="images-wrapper">
+                        <div class="main-image">
+                            <img src="asset/images/jeans.jpg" alt="jeans" srcset="">
+                            <div>
+                                <h1 style="font-size: 4.5em;">New arrivals</h1>
+                                <p style="font-size: 2.5em;padding: 25px 0;">COLLECTION 2021</p>
+                                <input type="button" value="shop now">
+                            </div>       
+                        </div>
+                        <P style="padding: 20px 0; color: var(--bg-black-300);">8 items</P>
+                        <div class="clothing">
+                                <div class="image-1">
+                                    <img src="asset/images/jeans1.jpg">
+                                    <p>Ripped Skinny Jeans</p>
+                                    <h3>$24.99</h3>
+                                </div>
+                                <div class="image-2">
+                                    <img src="asset/images/jeans2.jpg">
+                                    <p>Mega Ripped Jeans</p>
+                                    <h3>$19.99</h3>
+                                    <h4>New</h4>
+                                    <a href="#">Buy Now <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="image-3">
+                                    <img src="asset/images/jeans3.jpg">
+                                    <p>Washed Skinny Jeans</p>
+                                    <h3>$20.50</h3>
+                                </div>
+                                <div class="image-4">
+                                    <img src="asset/images/jeans4.jpg">
+                                    <p>Vintage Skinny Jeans</p>
+                                    <h3>$14.50</h3>
+                                </div>
+                                <div class="image-5">
+                                    <img src="asset/images/jeans2.jpg">
+                                    <p>Mega Ripped Jeans</p>
+                                    <h3>$19.99</h3>
+                                </div>
+                                <div class="image-6">
+                                    <img src="asset/images/jeans3.jpg">
+                                    <p>Washed Skinny Jeans</p>
+                                    <h3>$20.50</h3>
+                                </div>
+                                <div class="image-7">
+                                    <img src="asset/images/jeans4.jpg">
+                                    <p>Vintage Skinny Jeans</p>
+                                    <h3>$14.50</h3>
+                                    <h4>Sale</h4>
+                                    <a href="#">Buy Now <i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                </div>
+                                <div class="image-8">
+                                    <img src="asset/images/jeans1.jpg">
+                                    <p>Ripped Skinny Jeans</p>
+                                    <h3>$24.99</h3>
+                                </div>
+                        </div>
+                        
+                    </div>
+                    <form action="#" method="GET" class="subscription-form">
+                        <h2 style="padding: 20px 0;">Subscribe</h2>
+                        <p>To get special offers and VIP treatment</p>
+                        <label for="email">
+                            <input type="email" for='email' placeholder="Enter e-mail" required>
+                        </label>
+                        <br>
+                        <input type="submit" value="Subscribe">
+                    </form>
+                    <div class="information">
+                        <form action="#" method="GET" accept="utf8" class="contact-form" style="text-align: center;">
+                            <h3 style="padding-bottom: 15px;">Contact</h3>
+                            <p>Questions? Go ahead</p>
+                            <label for="name">
+                                <input type="text" placeholder="Name" name="name" required>
+                            </label><br>
+                            <label for="email">
+                                <input type="email" placeholder="Email" name="email" required>
+                            </label><br>
+                            <label for="subject">
+                                <input type="text" placeholder="Subject" name="subject" required>
+                            </label><br>
+                            <label for="message">
+                                <input type="text-area" placeholder="message" name="message" required>
+                            </label><br>
+                            <input type="submit" value="Send">
+                        </form>
+                        <ul style="text-align: center;">
+                            <h3 style="padding-bottom: 15px;">About</h3>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">We're hiring</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Find store</a></li>
+                            <li><a href="#">Shipment</a></li>
+                            <li><a href="#">Payment</a></li>
+                            <li><a href="#">Gitf card</a></li>
+                            <li><a href="#">Return</a></li>
+                            <li><a href="#">Help</a></li>
+                        </ul>
+                        <ul>
+                            <h3 style="padding-bottom: 15px;">Store</h3>
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i>  Company Name</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+251954956124">  +251954956124</a></li>
+                            <li><i class="fa fa-envelope" aria-hidden="true"></i> <a href = "mailto:ex@gmail.com">  ex@gmail.com</a></li>
+                            <h3 style="padding: 15px 0;">We accept</h3>
+                            <li><i class="fa fa-cc-amex" aria-hidden="true"></i>  Amex</li>
+                            <li><i class="fa fa-credit-card" aria-hidden="true"></i>  Credit Card</li>
+                        </ul>
+                    </div>
+                </main>
+                <footer>
+                    <h5>Powered by <a href='https://t.me/surafelfa' style="color: white;  text-decoration: underline;">Surafel</a></h5>
+                </footer>
+            </div>
+
+        </div>
+        
+    </div>
+    <script src="asset/js/js.js"></script>
+</body>  
+</html>
