@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="../dist/processed.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div style="min-width: 310px" class="max-w-fit mx-auto">
+      <header class="bg-black sticky top-0 w-full h-20 z-40 md:hidden">
+        <nav class="h-full">
+          <ul
+            class="text-white flex justify-between items-center text-2xl h-full"
+          >
+            <li class="uppercase tracking-widest ml-2.5">logo</li>
+            <li
+              class="hover:bg-gray-400 hover:text-white hover:cursor-pointer px-2.5 py-6"
+              id="menu"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div
+        class="fixed top-0 left-0 z-50 w-screen h-screen hover:cursor-pointer hidden"
+        style="background-color: rgba(0, 0, 0, 0.5)"
+        id="side-nav"
+        title="close side nav"
+      >
+        <nav class="bg-gray-200 w-2/6 h-full overflow-y-auto">
+          <button
+            type="button"
+            class="w-full text-right font-extrabold"
+            id="cross"
+          >
+            <i class="fa-solid fa-xmark hover:bg-gray-400 p-2"></i>
+          </button>
+          <h1 class="uppercase tracking-widest text-xl ml-4">logo</h1>
+          <ul class="my-16">
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Shirts
+            </li>
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Dresses
+            </li>
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Jeans
+            </li>
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Jackets
+            </li>
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Gymwear
+            </li>
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Blazers
+            </li>
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Shoes
+            </li>
+          </ul>
+          <ul>
+            <li class="p-2 hover:bg-gray-400 hover:cursor-pointer">Contact</li>
+            <li class="p-2 hover:bg-gray-400 hover:cursor-pointer">
+              Newsletter
+            </li>
+            <li class="p-2 hover:bg-gray-400 hover:cursor-pointer">
+              Subscribe
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="md:relative md:flex md:w-11/12 md:mx-auto">
+        <nav
+          class="w-5/12 h-screen overflow-y-auto sticky top-0 left-0 hidden md:block"
+        >
+          <h1 class="uppercase tracking-widest text-xl mt-8">logo</h1>
+          <ul class="my-16">
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Shirts
+            </li>
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Dresses
+            </li>
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Jeans
+            </li>
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Jackets
+            </li>
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Gymwear
+            </li>
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Blazers
+            </li>
+            <li
+              class="text-slate-400 font-semibold p-2 hover:bg-gray-400 hover:text-slate-950 hover:cursor-pointer"
+            >
+              Shoes
+            </li>
+          </ul>
+          <ul>
+            <li class="p-2 hover:bg-gray-400 hover:cursor-pointer">Contact</li>
+            <li class="p-2 hover:bg-gray-400 hover:cursor-pointer">
+              Newsletter
+            </li>
+            <li class="p-2 hover:bg-gray-400 hover:cursor-pointer">
+              Subscribe
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <main>
+            <div class="mx-2.5">
+              <section class="py-7">
+                <ul class="text-black flex justify-between text-xl">
+                  <li class="capitalize">jeans</li>
+                  <li class="space-x-4">
+                    <i class="fa-solid fa-cart-shopping"></i
+                    ><i class="fa-solid fa-magnifying-glass"></i>
+                  </li>
+                </ul>
+              </section>
+              <section class="relative">
+                <img src="asset/img/jeans.jpg" alt="jeans" srcset="" />
+                <div class="absolute top-10 left-5 text-white">
+                  <h1 class="text-5xl">New arrivals</h1>
+                  <h2 class="uppercase text-3xl mt-5 sm:block hidden">
+                    collection 2016
+                  </h2>
+                  <input
+                    type="button"
+                    value="shop now"
+                    class="uppercase bg-black py-2.5 px-5 mt-5 hover:cursor-pointer hover:bg-gray-300 hover:text-black"
+                  />
+                </div>
+                <p class="text-slate-300 my-2.5">8 items</p>
+              </section>
+              <section
+                class="grid grid-cols-2 gap-y-4 gap-x-8 mb-2.5 md:grid-cols-4"
+              >
+                <figur>
+                  <img src="asset/img/jeans1.jpg" alt="jeans1" srcset="" />
+                  <figcaption>
+                    <p class="text-slate-500">Ripped Skinny Jeans</p>
+                    <p class="font-bold">$24.99</p>
+                  </figcaption>
+                </figur>
+                <figure class="relative group">
+                  <img src="asset/img/jeans2.jpg" alt="jeans2" srcset="" />
+                  <figcaption>
+                    <p class="text-slate-500">Mega Ripped Jeans</p>
+                    <p class="font-bold">$19.99</p>
+                  </figcaption>
+                  <span
+                    class="absolute top-0 left-0 capitalize bg-black text-white py-0.5 px-2 text-xs"
+                    >new</span
+                  >
+                  <button
+                    type="button"
+                    class="invisible group-hover:visible hover:bg-gray-300 hover:text-black w-20 h-8 leading-8 text-xs absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white"
+                  >
+                    Buy now <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                </figure>
+                <figure>
+                  <img src="asset/img/jeans3.jpg" alt="jeans3" srcset="" />
+                  <figcaption>
+                    <p class="text-slate-500">Mega Ripped Jeans</p>
+                    <p class="font-bold">$19.99</p>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="asset/img/jeans4.jpg" alt="jeans4" srcset="" />
+                  <figcaption>
+                    <p class="text-slate-500">Washed Skinny Jeans</p>
+                    <p class="font-bold">$20.50</p>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="asset/img/jeans2.jpg" alt="jeans2" srcset="" />
+                  <figcaption>
+                    <p class="text-slate-500">Washed Skinny Jeans</p>
+                    <p class="font-bold">$20.50</p>
+                  </figcaption>
+                </figure>
+                <figure>
+                  <img src="asset/img/jeans3.jpg" alt="jeans3" srcset="" />
+                  <figcaption>
+                    <p class="text-slate-500">Vintage Skinny Jeans</p>
+                    <p class="font-bold">$14.99</p>
+                  </figcaption>
+                </figure>
+                <figure class="relative group">
+                  <img src="asset/img/jeans4.jpg" alt="jeans4" srcset="" />
+                  <figcaption>
+                    <p class="text-slate-500">Vintage Skinny Jeans</p>
+                    <p class="font-bold">$14.99</p>
+                  </figcaption>
+                  <span
+                    class="absolute top-0 left-0 capitalize bg-black text-white py-0.5 px-2 text-xs"
+                    >new</span
+                  >
+                  <button
+                    type="button"
+                    class="invisible group-hover:visible hover:bg-gray-300 hover:text-black w-20 h-8 leading-8 text-xs absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white"
+                  >
+                    Buy now <i class="fa-solid fa-cart-shopping"></i>
+                  </button>
+                </figure>
+                <figure>
+                  <img src="asset/img/jeans1.jpg" alt="jeans1" srcset="" />
+                  <figcaption>
+                    <p class="text-slate-500">Ripped Skinny Jeans</p>
+                    <p class="font-bold">$24.99</p>
+                  </figcaption>
+                </figure>
+              </section>
+            </div>
+            <section class="bg-black text-white py-6 px-3">
+              <h1 class="text-4xl mb-4">Subscribe</h1>
+              <p class="mb-2">To get special offers and VIP treatment:</p>
+              <input
+                type="text"
+                name=""
+                id=""
+                placeholder="Enter e-mail"
+                class="block placeholder-slate-500 p-2 w-full mb-3 text-black"
+              />
+              <button
+                type="button"
+                class="bg-red-500 py-2 px-4 hover:text-black hover:bg-gray-300"
+              >
+                Subscribe
+              </button>
+            </section>
+            <section class="grid grid-cols-3 gap-x-2 bg-gray-200 py-16 px-2">
+              <div>
+                <h1 class="text-center text-xl mb-4">Contact</h1>
+                <h2 class="text-center mb-2">Questions? Go ahead.</h2>
+                <input
+                  class="block p-1 mb-2 w-full border-2 border-gray-300"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Name"
+                />
+                <input
+                  class="block p-1 mb-2 w-full border-2 border-gray-300"
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Email"
+                />
+                <input
+                  class="block p-1 mb-2 w-full border-2 border-gray-300"
+                  type="text"
+                  placeholder="Subject"
+                />
+                <input
+                  class="block p-1 mb-2 w-full border-2 border-gray-300"
+                  type="text"
+                  placeholder="Message"
+                />
+                <button
+                  class="w-full py-2 text-sm bg-black text-center text-white hover:bg-gray-400 hover:text-black"
+                  type="button"
+                >
+                  Send
+                </button>
+              </div>
+              <div class="text-center">
+                <h1 class="mb-5">About</h1>
+                <a class="block underline text-xs mb-3" href="">About us</a>
+                <a class="block underline text-xs mb-3" href="">We're hiring</a>
+                <a class="block underline text-xs mb-3" href="">Support</a>
+                <a class="block underline text-xs mb-3" href="">Find store</a>
+                <a class="block underline text-xs mb-3" href="">Shipment</a>
+                <a class="block underline text-xs mb-3" href="">Payment</a>
+                <a class="block underline text-xs mb-3" href="">Gift card</a>
+                <a class="block underline text-xs mb-3" href="">Return</a>
+                <a class="block underline text-xs" href="">Help</a>
+              </div>
+              <div>
+                <h1 class="mb-5">Store</h1>
+                <p class="text-sm mb-3">
+                  <i class="fa-solid fa-location-dot"></i> Company Name
+                </p>
+                <p class="text-sm mb-3">
+                  <i class="fa-solid fa-phone"></i> 0044123123
+                </p>
+                <p class="text-sm mb-3">
+                  <i class="fa-solid fa-envelope"></i> ex@mail.com
+                </p>
+                <h1 class="mb-2">We accept</h1>
+                <p class="text-sm mb-3">
+                  <i class="fa-brands fa-cc-amex"></i> Amex
+                </p>
+                <p class="text-sm mb-5">
+                  <i class="fa-solid fa-credit-card"></i> Credit Card
+                </p>
+                <span>
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-square-snapchat"></i>
+                  <i class="fa-brands fa-pinterest-p"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </span>
+              </div>
+            </section>
+          </main>
+          <footer class="bg-black text-white text-center py-5">
+            <p>Powered by <a class="underline" href="">surafel</a></p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const menu = document.getElementById("menu");
+    const nav = document.getElementById("side-nav");
+    menu.addEventListener("click", () => {
+      nav.classList.add("block");
+      nav.classList.remove("hidden");
+    });
+    const cross = document.getElementById("cross");
+    cross.addEventListener("click", () => {
+      nav.classList.remove("block");
+      nav.classList.add("hidden");
+    });
+  </script>
+</html>
